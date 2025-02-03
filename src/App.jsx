@@ -20,7 +20,7 @@ function App() {
         </>
       ) : (
         <>
-          <h1>¿Quieres ser mi San Valentín? ❤️</h1>
+          <h1>¿Quieres ser saliar conmigo? ❤️</h1>
           <img src="/dbaac13f6278b91a15e480752b8a7242.gif" alt="Gatito Tierno" />
           <div className="buttons">
             <button className="yes" onClick={() => setClickedYes(true)}>
