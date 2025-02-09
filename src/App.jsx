@@ -6,7 +6,7 @@ function App() {
   const [posY, setPosY] = useState(0);
   const [clickedYes, setClickedYes] = useState(false);
 
-  const handleNoHover = () => {
+  const moveButton = () => {
     setPosX(Math.random() * 270 - 190);
     setPosY(Math.random() * 270 - 190);
   };
@@ -20,7 +20,7 @@ function App() {
         </>
       ) : (
         <>
-          <h1>¿Quieres ser saliar conmigo? ❤️</h1>
+          <h1>¿Te gustaría salir conmigo este 14 de febrero? ❤️</h1>
           <img src="/dbaac13f6278b91a15e480752b8a7242.gif" alt="Gatito Tierno" />
           <div className="buttons">
             <button className="yes" onClick={() => setClickedYes(true)}>
@@ -28,7 +28,8 @@ function App() {
             </button>
             <button
               className="no"
-              onMouseEnter={handleNoHover}
+              onMouseEnter={moveButton}
+              onClick={moveButton}
               style={{ transform: `translate(${posX}px, ${posY}px)` }}
             >
               No 😢
